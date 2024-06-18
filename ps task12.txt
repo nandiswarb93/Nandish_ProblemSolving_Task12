@@ -1,0 +1,66 @@
+str  = prompt("enter a string : ")
+l = ""
+u = ""
+for(i of str)
+{
+    if( i != " ")
+    {
+        if(i.toUpperCase() == i)
+        {
+            l = l + i
+        }
+        else
+        {
+            u = u + i
+        }
+    }
+}
+console.log("small letter follwed by capitals :  " + u+l)
+ 
+str  = prompt("enter a string : ")
+l=""
+u=""
+s = ""
+for( i of str)
+{
+      
+    if( i != " ")
+    {
+        if(i.toUpperCase() == i)
+        {
+            l = l + i
+        }
+        else
+        {
+            u = u + i
+        }
+    }
+}
+
+
+a = u.split("")
+//console.log(a)
+b = l.split("")
+//console.log(b)
+
+for(i = 0 ;i<b.length;i++)
+{
+    s = ""
+    for(j = 0 ; j < a.length;j++)
+    {
+        s = s + a[j] + b[j]
+    }
+}
+console.log("one is small letter and one big letter : "+s.split("undefined").join(""))
+
+
+o/p:
+
+
+enter a string : I am Good
+small letter follwed by capitals :  amoodIG
+enter a string : I am Good
+one is small letter and one big letter : aImGood
+
+
+
